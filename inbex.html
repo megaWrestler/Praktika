@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Web Site</title>
+</head>
+<body>
+    <div class="container">
+        <p class="main-logo" >R</p>
+        <header>
+            <p><span>RED</span>&nbsp;line</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sevices">Services</a></li>
+            </ul>
+        </header>
+
+        <div class="main" id="home">
+            <div class="main-text">
+                <h1>Red line</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis commodi aliquid placeat vel distinctio nemo. Praesentium obcaecati dolorum error beatae laborum repudiandae id harum corrupti consequatur. Illo saepe totam delectus eligendi atque tempore voluptas error quidem dicta accusamus, quas quaerat maxime enim, possimus facere. Recusandae corrupti quidem eos iusto quasi repudiandae suscipit non porro tempore amet a quo, laborum nostrum! Incidunt consequatur tempora voluptas. 
+                </p>
+                <a href="">
+                    <button>
+                        About
+                    </button>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="about" id="about">
+            <div class="image">
+                <p>Bu Yerda Rasm Bo`lishi Mumkin</p>
+                <span>1x1</span>
+            </div>
+            <div class="about-text">
+                <h1><span>Red </span> <i>Line</i> About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatum saepe minima. Sed pariatur quis necessitatibus minus odio amet ea exercitationem itaque nam adipisci quidem, excepturi porro fuga accusamus provident nihil molestias dolore blanditiis, nostrum quasi! Facere quam officia, accusamus vel ut inventore consectetur rem sint asperiores, impedit dolorem optio deseruntium, facilis exercitationem non velit rem eos necessitatibus architecto. Fugiat suscipiepudiandae, molestiae pariatur cum asperiores blanditiis nihil recusandae consequatur cumque exercci. Enim dolorem obcaecati in totam, odit repudiandae ea pariatur architecto facere praesentium nam recusandae nisi iure dolores, consequuntur id eius. Dignissimos sint natus eos perspiciatis libero facilis atque voluptas explicabo soluta veritatis a provident, aperiam aut eius. Ipsam quasi quas corrupti enim voluptas vero quis laudantium alias ut, voluptatem cupiditate aliquid et accusantium unde officiis molestias dolores placeat debitis in sed repellendus facere, vitae hic. Dolorum sequi mollitia, libero porro maiores numquam ipsum possimus nesciunt unde delectus? Rerum ipsum nesciunt in, atque architecto facere libero voluptas minus sed, ea beatae unde voluptatem tempora maiores incidunt odit omnis voluptate quibusdam aut. Quae deserunt sed sit pariatur recusandae exercitationem dignissimos, voluptatibus dicta quasi sapiente molestias assumenda veniam! Quas necessitatibus doloremque doloribus ipsam et eaque placeat quaerat eveniet omnis optio, dicta quam facere laudantium totam cumque reprehenderit rerum sunt quibusdam dolorum blanditiis in! Fuga facere nam corrupti. Odio a fuga ex maiores. Ut unde magni molestias quos odit modi praesentium, sit ea nihil id? Facilis, voluptas minima.</p>
+            </div>
+        </div>
+
+
+        <div class="services" id="sevices">
+            <div class="name-tab">
+                <h1><span>Red </span> <i>Line</i> Services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi illo sed asperiores?</p>
+            </div>
+            <div class="box-con">
+                
+            </div>
+            <div class="comment">
+                <p>Ex delectus, dolorem, laboriosam voluptates, facere aliquid dolore similique. Nesciunt itaque fugit ut, fuga, atque eaque dolore sit, aspernatur inventore adipisci autem! Sint cumque distinctio facilis repudiandae tenetur natus veritatis incidunt. Eligendi repellendus adipisci error eum voluptates perferendis fugiat quis suscipit rerum eius non enim ab qui ad hic, ea eaque, eos at architecto totam optio. Maiores molestiae consequatur temporibus dolorem.</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
+<script>
+    const Mehroj = class {
+        constructor(title, description){
+            this.title = title;
+            this.description = description
+        }
+        render(){
+            let div = document.createElement('div');
+            div.innerHTML =`
+                    <h1>${this.title}</h1>
+                    <p>${this.description}</p>
+                    <button>Obuna</button>
+                `;
+            div.classList.add('box')
+            document.querySelector('.box-con').appendChild(div)
+        }
+    }
+
+    new Mehroj('Matematika','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quo!').render()
+    new Mehroj('日本語','タクシー運転手タクシー会社　瓶協　Facebookふぇ車椅子!').render()
+    new Mehroj('Front-end','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quo!').render() 
+    new Mehroj('Rus tili','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quo!').render()
+    new Mehroj('Foundation','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quo!').render()
+</script>
